@@ -54,9 +54,14 @@ table {
 .Graphic-Design-4-hex { color: #15BF0F; }
 .Graphic-Design-5-hex { color: #2A8C1B; }
 
+html {
+  width: 100%;
+}
+
 body {
   background-color: #400336;
   min-width: fit-content;
+  width: 100%;
 }
 
 section {
