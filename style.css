@@ -74,6 +74,10 @@ h2 {
   font-weight: 300;
 }
 
+p {
+  color: #e7e7e7;
+}
+
 .soundCloudContainer {
   width: 1200px;
 }
