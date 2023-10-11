@@ -56,6 +56,7 @@ table {
 
 body {
   background-color: #400336;
+  min-width: fit-content;
 }
 
 section {
@@ -74,6 +75,7 @@ h2 {
 
 p {
   color: #e7e7e7;
+  font-family: sans-serif;
 }
 
 .soundCloudContainer {
@@ -82,8 +84,11 @@ p {
 }
 
 .lev1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0 40px 0;
+  width: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin: auto;
+  text-align: center;
+  /* margin: 0 0 40px 0; */
 }
