@@ -59,9 +59,7 @@ body {
 }
 
 section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
 }
 
 h2 {
@@ -79,9 +77,13 @@ p {
 }
 
 .soundCloudContainer {
-  width: 1200px;
+  display: block;
+  max-width: 1200px;
 }
 
 .lev1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 0 40px 0;
 }
