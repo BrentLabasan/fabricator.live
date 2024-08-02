@@ -3,174 +3,265 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Color Theme Swatches in Hex */
-.Graphic-Design-1-hex { color: #59024B; }
-.Graphic-Design-2-hex { color: #400336; }
-.Graphic-Design-3-hex { color: #0DF205; }
-.Graphic-Design-4-hex { color: #15BF0F; }
-.Graphic-Design-5-hex { color: #2A8C1B; }
-
-html {
-  width: 100%;
-}
-
-body {
-  background-color: #400336;
-  min-width: fit-content;
-  width: 100%;
-  font-weight: sans-serif;
-}
-
-a {
-  color: white;
-  font-family: Arial, sans-serif;
-  text-decoration: none;
-}
-a:hover {
-  color: white;
-  font-family: Arial, sans-serif;
-  text-decoration: underline;
-}
-
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
 section {
-  
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 6em;
+
+  text-shadow:
+    -8px -8px 12px rgba(255, 255, 255, 0.4),
+    8px 8px 12px rgba(0, 0, 0, 0.08);
 }
 
 h2 {
-  color: #0DF205;
-  font-size: 1.5em;
-  /* font-family: 'Love Ya Like A Sister', sans-serif; */
-  /* font-family: 'Grenze Gotisch', sans-serif; */
-  /* font-family: 'Codystar', sans-serif; */
-  font-family: 'Henny Penny', sans-serif;
-  font-weight: 900;
-}
+  font-size: 4em;
 
+  text-shadow:
+    -8px -8px 12px rgba(255, 255, 255, 0.4),
+    8px 8px 12px rgba(0, 0, 0, 0.08);
+}
 h3 {
-  color: #15BF0F;;
-  font-size: 1.2em;
-  font-family: 'Love Ya Like A Sister', sans-serif;
-  /* font-family: 'Grenze Gotisch', sans-serif; */
-  /* font-family: 'Codystar', sans-serif; */
-  /* font-family: 'Henny Penny', sans-serif; */
-  font-weight: 300;
+  font-size: 2em;
+
+  text-shadow:
+    -8px -8px 12px rgba(255, 255, 255, 0.4),
+    8px 8px 12px rgba(0, 0, 0, 0.08);
 }
 
-p {
-  color: #e7e7e7;
-  font-family: sans-serif;
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 40%);
 }
 
-.soundCloudContainer {
-  display: block;
-  max-width: 1200px;
-}
-
-.lev1 {
-  width: 100%;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  margin: auto;
-  text-align: center;
-  /* margin: 0 0 40px 0; */
-}
-
-/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-/*  GRID OF TWO  */
-.span_2_of_2 {
-	width: 100%;
-}
-.span_1_of_2 {
-	width: 49.2%;
-}
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	.span_2_of_2, .span_1_of_2 { width: 100%; }
+a:hover {
+  text-decoration: underline;
 }
 
 
 
 
-.blink {
-  animation: blinker 1.5s linear infinite;
+body {
+  background: hsl(328deg 58% 94%);
+  display: flex;
+  /* height: 100vh; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 2em; */
+  /* overflow-x: hidden; */
+  padding: 1em;
+
+  font-family: 'Arial';
+  font-weight: bold;
+
+  color: hsl(337deg 8% 69%);
 }
-@keyframes blinker {
-  50% {
-      opacity: 0;
+
+#header {}
+
+#header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333333; */
+
+  display: flex;
+  /* height: 100vh; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#header ul li {
+  float: left;
+  padding: 16px;
+}
+
+#header ul #hero {
+  font-size: 2em;
+}
+
+.blah {
+  /* user-select: none; */
+  background: #f8e7f1;
+  box-shadow: 20px 20px 60px #d3c4cd,
+    -20px -20px 60px #ffffff,
+    0 0 2vh 2vh hsl(328deg 58% 94%);
+  padding: 1em;
+  border-radius: 20px;
+
+  width: 80%;
+
+  display: flex;
+  /* height: 100vh; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1900px;
+}
+
+#MoF-announcement {
+  /* display: inline-flex;
+  flex-direction: row; */
+  
+}
+
+#MoF-announcement .left-half {
+  /* border: 1px solid red; */
+  width: 70%;
   }
+  
+  #MoF-announcement .right-half {
+  /* border: 1px solid blue; */
+  width: 30%;
 }
 
-
-
+#MoF-content {
+  border: 1px solid rgba(255, 166, 0, 0.192);
+  display: flex;
+  flex-direction: row;
+  width: 1900px;
+  }
+  
+  #MoF-content .left-half {
+    /* border: 1px solid red; */
+    width: 65%;
+    padding: 40px;
+    }
+    
+    #MoF-content .right-half {
+      /* border: 1px solid blue; */
+      width: 30%;
+      padding: 40px;
+}
